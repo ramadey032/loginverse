@@ -1,25 +1,17 @@
 import React from 'react';
 import './App.css';
-// import { Button } from 'react-bootstrap';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import DateFnsUtils from '@date-io/date-fns';
 import UserList from './UserList';
 
 function App() {
-  // const [modalShow, setModalShow] = React.useState(false);
-
   return (
-    <div className="App">
-      <>
-        {/* <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
-        </Button> */}
+    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+      <div className="App">
+        <UserList />
+      </div>
+    </MuiPickersUtilsProvider>
 
-        {/* <UserActiveDetails
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        /> */}
-        <UserList/>
-      </>
-    </div>
   );
 }
 

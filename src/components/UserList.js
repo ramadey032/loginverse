@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { fetchUsersDetails } from '../services/userInfo';
+import { Button } from 'react-bootstrap';
+import { fetchUsersDetails } from '../services/fetchUserInfo';
+import UserActivePeriods from './UserActivePeriods';
 
 
 const UserList = () => {
     const [userList, setuserList] = useState([]);
+    const [modalShow, setModalShow] = useState(false);
+    const [currentUserId, setCurrentUserId] = useState(null);
 
     useEffect(() => {
         (async () => {
@@ -12,17 +16,24 @@ const UserList = () => {
         })();
     }, []);
 
+    const activePeriod = (id) => {
+        setCurrentUserId(id);
+        setModalShow(true);
+    };
+
     const renderList = () => {
         return (
             <div className="w3-container">
                 <ul className="w3-ul w3-card-4" >
                     {userList.map((record) => {
                         return (
-                            <li className="w3-bar" key={record.id}>
-                                <img src="avatar.jpg" alt="avatar"  class="w3-bar-item w3-circle w3-hide-small" style={{width:"85px"}}></img>
+                            <li className="w3-bar" style={{  backgroundColor: "#fff" }} key={record.id}>
+                                <img src="avatar.jpg" alt="avatar" className="w3-bar-item w3-circle w3-hide-small" style={{ width: "85px" }}></img>
                                 <div className="w3-bar-item">
-                                    <span className="w3-large">{record.real_name}</span>
-                                    <span>{record.tz}</span>
+                                    <Button variant="primary" onClick={() => activePeriod(record.id)}>
+                                        <div className="w3-large">{record.real_name}</div>
+                                    </Button>
+                                    <div>{record.tz}</div>
                                 </div>
                             </li>
                         );
@@ -33,14 +44,18 @@ const UserList = () => {
     }
 
     return (
-        <div class="ui horizontal list">
-            <div class="item">
-                <div class="content">
-                    <div class="header">User List</div>
+        <div className="ui horizontal list container">
+            <div className="item">
+                <div className="content">
+                    <div className="header">User List</div>
                     <div className="ui celled list">{renderList()}</div>
+                    <UserActivePeriods
+                        show={modalShow}
+                        id={currentUserId}
+                        onHide={() => setModalShow(false)}
+                    />
                 </div>
             </div>
-
         </div>
     );
 };
