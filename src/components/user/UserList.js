@@ -32,6 +32,11 @@ const UserList = () => {
         setModalShow(true);
     };
 
+    const resetDate = () => {
+        setModalShow(false);
+        handleDateChange(formatedDate);
+    };
+
     const modalBody = () => {
         return (
             <>
@@ -81,7 +86,7 @@ const UserList = () => {
                 body={modalBody()}
                 footer="Close"
                 show={modalShow}
-                onHide={() => setModalShow(false)}
+                onHide={() => resetDate()}
             />
         </div>
     );
