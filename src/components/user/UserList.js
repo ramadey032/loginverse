@@ -1,3 +1,4 @@
+import './UserList.css';
 import React, { useState, useEffect } from 'react';
 import { fetchUsersDetails } from '../../services/fetchUserInfo';
 import { KeyboardDatePicker } from "@material-ui/pickers";
@@ -23,7 +24,7 @@ const UserList = () => {
 
     if (currentUserId) {
         activity_logs = userList.find(({ id }) => id === currentUserId)
-        .activity_periods.filter(({ start_time }) => start_time.slice(0, 11) === selectedDate);
+            .activity_periods.filter(({ start_time }) => start_time.slice(0, 11) === selectedDate);
     }
 
     const activePeriod = (id) => {
@@ -45,17 +46,20 @@ const UserList = () => {
                     InputAdornmentProps={{ position: "start" }}
                     onChange={date => handleDateChange(String(date).slice(4, 15))}
                 />
-                {activity_logs.length !== 0 ? activity_logs.map((e) => <div key={activity_logs.length++}>
-                    <p>Start Time : {e.start_time}</p>
-                    <p>End Time : {e.end_time}</p>
-                </div>) : <div> No time log for the day.</div>}
+                <div className="activity_log">
+                    {activity_logs.length !== 0
+                        ? activity_logs.map((e) => <div key={activity_logs.length++}>
+                            <p><b>Start Time :</b> {e.start_time}</p>
+                            <p><b>End Time :</b> {e.end_time}</p>
+                        </div>)
+                        : <div> No time log for the day.</div>}
+                </div>
             </>
         );
     };
 
     return (
         <div className="container">
-            <div className="header">User List</div>
             <div className="w3-container">
                 <ul className="w3-ul w3-card-4" >
                     {

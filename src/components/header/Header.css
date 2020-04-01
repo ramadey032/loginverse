@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+.app-header {
+  height: 30vh;
+  background-image: url(/assets/contemporary-header-background.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  background-size: cover;
+  background-position: top;
+  padding: 25px;
+  position: relative;
+}
+
+.logo-animated {
+  animation: moveFromLeft 1s ease-out;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
