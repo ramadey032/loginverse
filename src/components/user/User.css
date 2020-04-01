@@ -1,5 +1,7 @@
 .w3-bar:hover {
     cursor: pointer;
+    color: orange;
+    background-color: #277e44be !important;
 }
 
 .w3-bar-item {
