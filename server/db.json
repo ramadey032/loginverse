@@ -1,0 +1,131 @@
+{
+  "members": [
+    {
+      "id": "W087A3CTE",
+      "real_name": "Ramaranjan Dey",
+      "tz": "India / Bangalore",
+      "activity_periods": [
+        {
+          "start_time": "Apr 01 2020  11:33AM",
+          "end_time": "Apr 01 2020 12:54PM"
+        },
+        {
+          "start_time": "Mar 31 2020  2:33PM",
+          "end_time": "Mar 31 2020 2:54PM"
+        },
+        {
+          "start_time": "Mar 28 2020  11:11AM",
+          "end_time": "Mar 28 2020 2:00PM"
+        },
+        {
+          "start_time": "Feb 01 2020  1:33PM",
+          "end_time": "Feb 01 2020 1:54PM"
+        }
+      ]
+    },
+    {
+      "id": "W012A3CDE",
+      "real_name": "Egon Spengler",
+      "tz": "America / Los_Angeles",
+      "activity_periods": [
+        {
+          "start_time": "Apr 01 2020  11:33AM",
+          "end_time": "Apr 01 2020 12:54PM"
+        },
+        {
+          "start_time": "Feb 01 2020  1:33PM",
+          "end_time": "Feb 01 2020 1:54PM"
+        },
+        {
+          "start_time": "Feb 01 2020  4:33PM",
+          "end_time": "Feb 01 2020 4:54PM"
+        },
+        {
+          "start_time": "Mar 01 2020  11:11AM",
+          "end_time": "Mar 01 2020 2:00PM"
+        },
+        {
+          "start_time": "Mar 16 2020  5:33PM",
+          "end_time": "Mar 16 2020 8:02PM"
+        }
+      ]
+    },
+    {
+      "id": "W07QCRPA4",
+      "real_name": "Glinda Southgood",
+      "tz": "Asia / Kolkata",
+      "activity_periods": [
+        {
+          "start_time": "Apr 01 2020  11:33AM",
+          "end_time": "Apr 01 2020 12:54PM"
+        },
+        {
+          "start_time": "Feb 01 2020  1:33PM",
+          "end_time": "Feb 01 2020 1:54PM"
+        },
+        {
+          "start_time": "Mar 31 2020  2:33PM",
+          "end_time": "Mar 01 2020 2:00PM"
+        },
+        {
+          "start_time": "Mar 16 2020  5:33PM",
+          "end_time": "Mar 16 2020 8:02PM"
+        }
+      ]
+    },
+    {
+      "id": "A012W3VYI",
+      "real_name": "Eric Krumins",
+      "tz": "France / Paris",
+      "activity_periods": [
+        {
+          "start_time": "Apr 01 2020  11:33AM",
+          "end_time": "Apr 01 2020 12:54PM"
+        },
+        {
+          "start_time": "Jan 12 2020  12:33PM",
+          "end_time": "Jan 12 2020 1:54PM"
+        },
+        {
+          "start_time": "Feb 01 2020  4:33PM",
+          "end_time": "Feb 01 2020 4:54PM"
+        },
+        {
+          "start_time": "Mar 01 2020  11:11AM",
+          "end_time": "Mar 01 2020 2:00PM"
+        },
+        {
+          "start_time": "Mar 16 2020  5:33PM",
+          "end_time": "Mar 16 2020 8:02PM"
+        }
+      ]
+    },
+    {
+      "id": "D3E42W3VYI",
+      "real_name": "Rohit Kumar",
+      "tz": "India / Delhi",
+      "activity_periods": [
+        {
+          "start_time": "Apr 01 2020  11:33AM",
+          "end_time": "Apr 01 2020 12:54PM"
+        },
+        {
+          "start_time": "Jan 25 2020  12:33PM",
+          "end_time": "Jan 25 2020 1:54PM"
+        },
+        {
+          "start_time": "Feb 17 2020  4:33PM",
+          "end_time": "Feb 17 2020 4:54PM"
+        },
+        {
+          "start_time": "Dec 21 2019  11:11AM",
+          "end_time": "Dec 21 2019 2:00PM"
+        },
+        {
+          "start_time": "Mar 16 2020  5:33PM",
+          "end_time": "Mar 16 2020 8:02PM"
+        }
+      ]
+    }
+  ]
+}
